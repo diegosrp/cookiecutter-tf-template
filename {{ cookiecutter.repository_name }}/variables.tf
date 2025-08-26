@@ -25,7 +25,7 @@ variable "default_tags" {
   description = "Tags to be applied to resources"
   type        = map(string)
   default = {
-    project     = "{{ cookiecutter.project_name }}"
+    project     = "{{ cookiecutter.project_name.lower() }}"
     environment = "{{ cookiecutter.environment }}"
     deployment  = "terraform"
   }
