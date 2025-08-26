@@ -1,8 +1,8 @@
 import sys
 import re
 
-project_name = "{{cookiecutter.project_name}}".strip().lower().replace(" ", "-").replace("_", "-")
-subscription_id = "{{cookiecutter.subscription_id}}".strip()
+project_name = "{{ cookiecutter.project_name }}".strip().lower().replace(" ", "-").replace("_", "-")
+subscription_id = "{{ cookiecutter.subscription_id }}".strip()
 
 if not project_name:
     print("ERROR: The 'project_name' cannot be empty.", file=sys.stderr)

@@ -40,7 +40,7 @@ These values will customize your new project.
 >
 > **Note:**
 >
-> - `project_name;` is required and cannot be empty. It may include letters, numbers, spaces, hyphens (-), and underscores (_). <br> In the final name, all spaces and underscores are replaced by hyphens, everything is converted to lowercase.<br><br>
+ > - `project_name;` is required and cannot be empty. It may include only letters, numbers, spaces, hyphens (-), and underscores (_). <br> In the final name, all spaces and underscores are replaced by hyphens, everything is converted to lowercase.<br><br>
 > - `subscription_id;` is optional. If provided, it must be a valid Azure Subscription GUID (format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
 > <br>
 
