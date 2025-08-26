@@ -2,20 +2,18 @@ import sys
 import re
 
 raw_project_name = "{{ cookiecutter.project_name }}"
-project_name = raw_project_name.strip().lower().replace(" ", "-").replace("_", "-")
+# Remove any character that is not a letter, number, space, or hyphen
+cleaned_project_name = re.sub(r"[^a-zA-Z0-9\- ]", "", raw_project_name)
+project_name = cleaned_project_name.strip().lower().replace(" ", "-")
 subscription_id = "{{ cookiecutter.subscription_id }}".strip()
 minimum_terraform_version = "{{ cookiecutter.minimum_terraform_version }}".strip()
 maximum_terraform_version = "{{ cookiecutter.maximum_terraform_version }}".strip()
 provider_minimum_version = "{{ cookiecutter.provider_minimum_version }}".strip()
 
 
-# Validate project_name: only letters, numbers, spaces, hyphens (-) allowed
-project_name_regex = r"^[a-zA-Z0-9\- ]+$"
-if not raw_project_name.strip():
-    print("ERROR: The 'project_name' cannot be empty.", file=sys.stderr)
-    sys.exit(1)
-if not re.match(project_name_regex, raw_project_name):
-    print("ERROR: 'project_name' must contain only letters, numbers, spaces, or hyphens (-).", file=sys.stderr)
+# Clean project_name: allow only letters, numbers, spaces, and hyphens (-). Remove all other characters.
+if not cleaned_project_name.strip():
+    print("ERROR: The 'project_name' cannot be empty after removing invalid characters.", file=sys.stderr)
     sys.exit(1)
 
 
