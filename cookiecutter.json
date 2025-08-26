@@ -12,7 +12,7 @@
     ],
     "subscription_id": "",
     "location": "australia east",
-    "repository_name": "tf-azurerm-{{ cookiecutter.project_name | replace(' ', '-') | replace('_', '-') | lower }}",
+    "repository_name": "tf-azurerm-{{ cookiecutter.project_name | replace(' ', '-') | lower }}",
 
     "__prompts__": {
         "project_name": "Enter the project name",

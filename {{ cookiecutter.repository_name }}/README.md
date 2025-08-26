@@ -1,5 +1,5 @@
 
-# Terraform - "{{ cookiecutter.project_name }}".strip().lower().replace(" ", "-").replace("_", "-")
+# Terraform - {{ cookiecutter.project_name }}
 
 ## Overview
 
