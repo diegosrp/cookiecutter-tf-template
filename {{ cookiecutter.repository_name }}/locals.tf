@@ -4,5 +4,5 @@
 #-------------------------------------------------------------------------------------------------------------------------------
 
 locals {
-  project_name = "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}-{{ cookiecutter.environment.lower() }}"
+  project_name = "{{ cookiecutter.project_name.lower().replace(' ', '-') }}-{{ cookiecutter.environment }}"
 }

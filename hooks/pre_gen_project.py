@@ -2,7 +2,7 @@ import sys
 import re
 
 raw_project_name = "{{ cookiecutter.project_name }}"
-project_name = raw_project_name.strip().lower().replace(" ", "-").replace("_", "-")
+project_name = raw_project_name.strip().lower().replace(" ", "-")
 subscription_id = "{{ cookiecutter.subscription_id }}".strip()
 minimum_terraform_version = "{{ cookiecutter.minimum_terraform_version }}".strip()
 maximum_terraform_version = "{{ cookiecutter.maximum_terraform_version }}".strip()
