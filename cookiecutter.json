@@ -1,0 +1,25 @@
+{
+    "project_name": "",
+    "minimum_terraform_version": "1.10.0",
+    "maximum_terraform_version": "2.0",
+    "provider_minimum_version": "4.40",
+    "environment": [
+      "sandbox",  
+      "dev",  
+      "test",  
+      "staging",  
+      "prod"  
+    ],
+    "subscription_id": "",
+    "location": "australia east",
+    "repository_name": "tf-azurerm-{{ cookiecutter.project_name | replace(' ', '-') | replace('_', '-') | lower }}",
+
+    "__prompts__": {
+        "project_name": "Enter the project name",
+        "minimum_terraform_version": "Minimum required Terraform version",
+        "maximum_terraform_version": "Maximum supported Terraform version",
+        "provider_minimum_version": "Minimum provider version",
+        "subscription_id": "Enter your Azure Subscription ID (GUID format, e.g. xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)",
+        "location": "Enter the Azure region for your resources (e.g. 'australia east' or 'australiaeast', both formats are accepted)"
+    }
+ }
