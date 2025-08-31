@@ -47,12 +47,12 @@ These values will customize your new project.
 ### 3. Example answers for the variables
 
 ```json
-"project_name": my project
-"minimum_terraform_version": 1.10.0
+"project_name": MY project-AZure
+"minimum_terraform_version": 1.12.0
 "maximum_terraform_version": 2.0
 "provider_minimum_version": 4.40
-"environment": 1
-"subscription_id": 0000-0000-0000-0000-000000000000
+"environment": 2
+"subscription_id": 
 "location": australiaeast
 ```
 
